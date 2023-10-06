@@ -1,0 +1,23 @@
+﻿<Page x:Class="Prak_9_.ReadMessage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Prak_9_"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ChekMail">
+    <Grid Background="Indigo">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="37*"/>
+        </Grid.RowDefinitions>
+        <RichTextBox x:Name="rtb" Grid.Row="1"  Margin="10,0,10,48" Foreground="#FFF"/>
+        <WrapPanel x:Name="wp" Orientation="Vertical" ItemWidth="600" ItemHeight="26" HorizontalAlignment="Right" Width="600">
+            <TextBlock x:Name="text_1" TextWrapping="Wrap" Text="TextBlock" Foreground="#FFF" TextAlignment="Center" FontSize="16" Background="#000"/>
+            <TextBlock x:Name="text_2" TextWrapping="Wrap" Text="TextBlock" Foreground="#FFF" TextAlignment="Center" FontSize="16" Background="#000"/>
+            <TextBlock x:Name="text_3" TextWrapping="Wrap" Text="TextBlock" Foreground="#FFF" TextAlignment="Center" FontSize="16" Background="#000"/>
+        </WrapPanel>
+        <Button Content="Ответить" HorizontalAlignment="Center" Grid.Row="1" Width="250"  VerticalAlignment="Bottom" Click="Button_Click" />
+    </Grid>
+</Page>
